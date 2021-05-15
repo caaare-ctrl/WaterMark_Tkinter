@@ -69,7 +69,7 @@ class Page2:
             self.color_label = Label(self.frame, text="Color :", font=FONT, bg=PINK)
             self.color_label.grid(row=4,column=0, sticky="w")
             self.color_checkbox = Combobox(self.frame)
-            self.color_checkbox['values'] = ("white","black","Tomato","DodgerBlue")
+            self.color_checkbox['values'] = ("White","Black","Tomato","DodgerBlue","DarkSlateGrey")
             self.color_checkbox.current(0)
             self.color_checkbox.grid(row=4,column=1, sticky="e")
 
