@@ -54,8 +54,8 @@ class Page2:
         self.upload_button.grid(row=0, column=1, columnspan=2, sticky="e")
 
         if Logo:
-            self.upload_logo_button = Button(self.frame, text="Upload", font=FONT, bg=PINK, command=self.open_logo)
-            self.upload_logo_button.grid(row=1, column=1, sticky="w")
+            self.upload_logo_button = Button(self.frame, text="Upload", command=self.open_logo)
+            self.upload_logo_button.grid(row=1, column=1,columnspan=2, sticky="e")
             self.upload_logo_label = Label(self.frame, text="Your Watermark Logo:", font=FONT, bg=PINK)
             self.upload_logo_label.grid(row=1, column=0, sticky="w")
         if not Logo:
